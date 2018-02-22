@@ -9,13 +9,13 @@ Il faut beaucoup de I/O --> BeagleBone (voir la gamme de produits).
 
 ### OS
 OS nécessaire car :
-- interaction rapide avec le materiel complexe (differents capteurs, besoin de taches s'exécutant en tache de fond).
+- interaction rapide avec le materiel complexe (differents capteurs, besoin de taches s'exécutant en fond).
 - prototypage rapide.
 
 ### Quel OS
 Distribution Linux.
 --> Debian (actuel avec version 9.3 ?)
 
-Si contraintes temps réel --> patcher le noyeau Linux avec PREEMPT_RT.
+Si contraintes temps réel --> patcher le noyau Linux avec PREEMPT_RT.
 
 # Définir le cadre de la PR
