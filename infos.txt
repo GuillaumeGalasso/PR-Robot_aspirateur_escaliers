@@ -1,0 +1,60 @@
+Algorithmes à développer :
+
+
+	Capteurs :
+	
+		Gestion du LIDAR:
+			Thread d'acquisition : gestion du port série (UART) (need une lib)
+			Acquisition des points détectés et leurs "distances"
+			Traitement du proche-loin + acceptable-dangereux : 
+				Définition de constantes de fonctionnement pour ce qui est proche/loin
+		
+		Gestion de l'accéléromètre :
+			Thread d'acquisition : gestion de l'I2C (need une lib)
+			Acquisition des valeurs d'inclinaison sur 16 bits (2 bytes => Deux lectures I2C)
+			=> Adapter la commande des moteurs
+			
+		Gestion des ultrasons :
+			Thread d'acquisition : gestion personnalisée du protocole TRIG-ECHO
+			Protocole TRIG-ECHO :
+				Constantes :
+					VITESSE_SON : 34 000 / 1 000 000 cm/µs
+				
+				Variables :	
+					distance : réel (flottant)
+					durée : entier
+					T : Timer
+					TRIG : Signal
+					ECHO : Signal
+				
+				Conditions initiales :
+					T : valeur active 0 µs
+					TRIG : état logique bas ('0')
+					ECHO : état logique bas ('0')
+				
+				Début:
+				
+				TRIG <- '1' 
+				Start T
+				Tant que T.écoulé() < 10 µsecondes
+					Ne rien faire
+				Stop T
+				TRIG <- '0'
+				
+				Tant que ECHO == '0'
+					Ne rien faire
+				
+				Start T
+				Tant que ECHO == '1'
+					Ne rien faire
+				Stop T
+				
+				//Le module hc-sr04 envoie un signal pendant un temps indiquant des dizaines de µs, 
+				//il faut donc multiplier le temps de lecture du pulse sur la pin par 10
+				durée <- T.écoulé() * 10 
+				
+				distance <- VITESSE_SON*durée/2 //on divise par deux car l'onde sonore effectue un aller-retour, soit le double de la distance
+				
+				Fin
+				
+				
