@@ -6,7 +6,7 @@ En tout :
 - 8 moteurs pas à pas (traction, escalade des escaliers)
 - 3 moteurs pour l'aspiration
 
-# Il reste à corriger/identifier les modèles des moteurs à utiliser
+## <span style="color:red">Il reste à corriger/identifier les modèles des moteurs à utiliser</span>
 
 Partie informatique :
 - 2 cartes de type BB Blue (controleurs moteurs présents de base) où on branche tous les moteurs dédiés à la traction (qui demandent un asservissement).
