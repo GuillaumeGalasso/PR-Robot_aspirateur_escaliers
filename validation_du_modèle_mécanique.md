@@ -1,5 +1,5 @@
-Modèle retenu : solution 2 PR précédente.
---> Pas clair sur le nombre de moteurs/type de moteu
+Modèle retenu : solution 2 PR précédente. \
+--> Pas clair sur le nombre de moteurs/type de moteurs \
 --> Certains modèles (moteurs roues traction) ne vont pas avec la modélisation
 
 En tout :
