@@ -6,8 +6,9 @@ En tout :
 - 8 moteurs pas à pas (traction, escalade des escaliers)
 - 3 moteurs pour l'aspiration
 
-```html
-   <span style="color:red;">Il reste à corriger/identifier les modèles des moteurs à utiliser</span>
+```diff
++ this will be highlighted in green
+- this will be highlighted in red
 ```
 
 Partie informatique :
