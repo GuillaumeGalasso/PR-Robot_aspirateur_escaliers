@@ -15,5 +15,5 @@ Partie informatique :
 - les 3 autres moteurs (aspiration) seront branchés sur batterie (pas de controle requis) et activés/désactivés avec I/O d'une des cartes BBB
 
 ```diff
--Il faut faire un schéma technique / modélisation éléctronique du système
+Il faut faire un schéma technique / modélisation éléctronique du système
 ```
