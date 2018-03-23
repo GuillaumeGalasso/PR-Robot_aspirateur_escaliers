@@ -5,7 +5,10 @@ Modèle retenu : solution 2 PR précédente. \
 En tout :
 - 8 moteurs pas à pas (traction, escalade des escaliers)
 - 4 moteurs pour l'aspiration
-- 2 à 4 capteurs de position initiale 
+- 4 capteurs de position initiale 
+- 2 ultrasons à placer
+- 1 LIDAR à placer
+- 1 Centrale inertielle à placer
 
 ```diff
 --> Il reste à corriger/identifier les modèles des moteurs à utiliser
