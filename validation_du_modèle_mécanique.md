@@ -4,11 +4,14 @@ Modèle retenu : solution 2 PR précédente. \
 
 En tout :
 - 8 moteurs pas à pas (traction, escalade des escaliers)
-- 3 moteurs pour l'aspiration
+- 4 moteurs pour l'aspiration
+- 2 à 4 capteurs de position initiale 
 
 ```diff
 --> Il reste à corriger/identifier les modèles des moteurs à utiliser
 ```
+
+
 
 Partie informatique :
 - 2 cartes de type BB Blue (controleurs moteurs présents de base) où on branche tous les moteurs dédiés à la traction (qui demandent un asservissement).
